@@ -1,7 +1,7 @@
 import { ADD_MESSAGE, DELETE_MESSAGE, FETCH_MESSAGE, UPDATE_MESSAGE } from './types';
-
 import axios from 'axios';
-const apiUrl = 'http://localhost:3000/messages';
+
+const apiUrl = process.env.REACT_APP_API_URL;
 
 export const createMessage = (data) => {
   return dispatch => {
