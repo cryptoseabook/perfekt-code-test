@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { createMessage } from './actions/index';
 
-import axios from 'axios';
-const apiUrl = 'http://localhost:3000/messages';
-
 class MessageForm extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
@@ -37,9 +34,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    createAMessage: async (message) => {
-      let response =  await axios.post(`${apiUrl}`, message)
-      console.log(message, response.data)
+    createAMessage: (message) => {
       dispatch(createMessage(message))
     }
   }

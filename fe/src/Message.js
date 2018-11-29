@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import { deleteMessage } from './actions/index';
 
-import axios from 'axios';
-const apiUrl = 'http://localhost:3000/messages';
-
 class Message extends Component {
   handleDelete = () => {
     console.log('handleDelete')
@@ -35,8 +32,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    deleteAMessage: async (id) => {
-      await axios.delete(`${apiUrl}/${id}`)
+    deleteAMessage: (id) => {
       dispatch(deleteMessage(id))
     },
     handleEdit: (id) => {

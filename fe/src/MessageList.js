@@ -5,9 +5,6 @@ import EditComponent from './EditComponent';
 
 import { fetchAllMessages } from './actions/index';
 
-import axios from 'axios';
-const apiUrl = 'http://localhost:3000/messages';
-
 class MessageList extends Component {
   componentDidMount() {
     this.props.fetchMessages()
@@ -35,9 +32,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchMessages: async () => {
-      let response =  await axios.get(`${apiUrl}`)
-      dispatch(fetchAllMessages(response.data))
+    fetchMessages: () => {
+      dispatch(fetchAllMessages())
     }
   }
 }

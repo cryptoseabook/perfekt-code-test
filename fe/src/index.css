@@ -21,3 +21,8 @@ code {
   padding: 20px;
   border: 1px solid black;
 }
+
+.update-form {
+  margin: 5px;
+  padding: 5px;
+}

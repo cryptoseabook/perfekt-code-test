@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { updateMessage } from './actions/index';
 
-import axios from 'axios';
-const apiUrl = 'http://localhost:3000/messages';
-
-
 class EditComponent extends Component {
   handleUpdate = (e) => {
     e.preventDefault();
@@ -18,7 +14,7 @@ class EditComponent extends Component {
   }
   render() {
     return (
-    <div key={this.props.message.id}>
+    <div key={this.props.message.id} className="update-form">
       <form onSubmit={this.handleUpdate}>
         <input required type="text" ref={(input) => this.getMessage = input}
         defaultValue={this.props.message.message} placeholder="Enter Message" /><br /><br />
@@ -36,8 +32,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    updateAMessage: async (id, data) => {
-      await axios.put(`${apiUrl}/${id}`, data)
+    updateAMessage: (id, data) => {
       dispatch(updateMessage(id, data.message))
     }
   }
