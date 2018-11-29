@@ -5,6 +5,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 /test/unit/coverage/
+db.json
 
 # Editor directories and files
 .idea
@@ -13,7 +14,5 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-
-db.json
 
 uploads/**
