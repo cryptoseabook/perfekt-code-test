@@ -1,19 +1,18 @@
 {
   "messages": [
     {
-      "id": "1543480736685",
+      "id": "1543484538075",
+      "message": "hello world",
       "editing": false
     },
     {
-      "id": "1543480737820",
+      "id": "1543484543707",
+      "message": "this is awesome",
       "editing": false
     },
     {
-      "id": "1543480739148",
-      "editing": false
-    },
-    {
-      "id": "1543480740197",
+      "id": "1543484548033",
+      "message": "it's a nice day today, the weather is good",
       "editing": false
     }
   ],

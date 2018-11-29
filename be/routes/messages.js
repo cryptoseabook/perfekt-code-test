@@ -13,7 +13,6 @@ router.get('/', function(req, res, next) {
   res.send(db.get('messages').value());
 });
 
-
 router.post('/', function(req, res, next) {
   let data = req.body
   db.get('messages').push(data).write()
