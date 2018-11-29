@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/perfekt-code-test/static/js/runtime~main.03e000d6.js"
   },
   {
-    "revision": "5545d0d1bc9376d2a67f",
-    "url": "/perfekt-code-test/static/js/main.5545d0d1.chunk.js"
+    "revision": "a0f11063ed871b33d8fc",
+    "url": "/perfekt-code-test/static/js/main.a0f11063.chunk.js"
   },
   {
     "revision": "7ff2daa7369c96c31eb9",
     "url": "/perfekt-code-test/static/js/1.7ff2daa7.chunk.js"
   },
   {
-    "revision": "5545d0d1bc9376d2a67f",
+    "revision": "a0f11063ed871b33d8fc",
     "url": "/perfekt-code-test/static/css/main.e2438047.chunk.css"
   },
   {
-    "revision": "ff3bd6e6b7a367b6a2593bdf6eb4663b",
+    "revision": "ee3c75c51d007457a8ab3d2772fb0d8a",
     "url": "/perfekt-code-test/index.html"
   }
 ];
